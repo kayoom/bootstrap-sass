@@ -3,6 +3,6 @@ module BootstrapHelper
     klass = current_page?(url_options) ? 'active' : ''
     a = link_to text, url_options
     
-    content_tag :li, a, class:  klass
+    content_tag :li, a, :class => klass
   end
 end
